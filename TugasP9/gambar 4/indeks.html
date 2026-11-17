@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar 4 - Implementasi Box & Browser UI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            background-color: #fff;
+        }
+        
+        /* Browser UI Styling */
+        .browser-window {
+            border: 2px solid #555;
+            width: 800px;
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        .browser-header {
+            background-color: #e0e0e0;
+            border-bottom: 2px solid #555;
+            padding: 5px 15px 10px;
+        }
+        .browser-title {
+            text-align: center;
+            font-size: 13px;
+            color: #000;
+            margin-bottom: 8px;
+        }
+        .browser-nav {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .nav-icons {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+            letter-spacing: 2px;
+        }
+        .address-bar {
+            flex-grow: 1;
+            background-color: #fff;
+            border: 2px solid #555;
+            padding: 4px 10px;
+            font-size: 14px;
+            color: #0066cc;
+        }
+
+        /* Content Layout Styling */
+        .browser-content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #fff;
+        }
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+        .box {
+            border: 2px solid #333;
+        }
+        
+        /* Warna & Ukuran */
+        .top-left { background-color: #ffe650; width: 15%; height: 50px; }
+        .top-right { background-color: #ff6b2b; width: 85%; height: 50px; }
+
+        .mid-left { background-color: #a9d18e; width: 25%; height: 350px; }
+        .mid-center { background-color: #d9d9d9; width: 55%; height: 350px; }
+        .mid-right { background-color: #4bd1ff; width: 20%; height: 350px; }
+
+        .bottom-full { background-color: #2962ff; width: 100%; height: 50px; }
+    </style>
+</head>
+<body>
+    <div class="browser-window">
+        <!-- Mock Browser Header -->
+        <div class="browser-header">
+            <div class="browser-title">Moqzilla</div>
+            <div class="browser-nav">
+                <div class="nav-icons">⬅ ➡ ↻</div>
+                <div class="address-bar">http://box2.com</div>
+            </div>
+        </div>
+        
+        <!-- Konten Box -->
+        <div class="browser-content">
+            <div class="row">
+                <div class="box top-left"></div>
+                <div class="box top-right"></div>
+            </div>
+            <div class="row">
+                <div class="box mid-left"></div>
+                <div class="box mid-center"></div>
+                <div class="box mid-right"></div>
+            </div>
+            <div class="row">
+                <div class="box bottom-full"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

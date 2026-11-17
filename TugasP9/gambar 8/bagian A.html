@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar 8a - Layout Flexbox 1</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .wrapper {
+            display: flex;
+            border: 1px solid #ccc;
+            min-height: 300px;
+            font-weight: bold;
+        }
+        .side-nav {
+            width: 20%;
+            background-color: #ffb6c1; /* Pink */
+            padding: 20px;
+        }
+        .main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        .header, .footer {
+            background-color: #f0e68c; /* Kuning Pucat */
+            padding: 20px;
+        }
+        .middle-content {
+            display: flex;
+            flex-grow: 1;
+        }
+        .article {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+        }
+        .aside {
+            width: 25%;
+            background-color: #00ffff; /* Cyan */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="side-nav">Nav</div>
+        <div class="main-content">
+            <div class="header">Header</div>
+            <div class="middle-content">
+                <div class="article">Article</div>
+                <div class="aside">Aside</div>
+            </div>
+            <div class="footer">Footer</div>
+        </div>
+    </div>
+</body>
+</html>

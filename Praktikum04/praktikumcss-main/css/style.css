@@ -1,0 +1,129 @@
+/* ===== Dasar ===== */
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 6px 10px 30px;
+    background: #f5f5dc;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* ===== Header ===== */
+#header {
+    background: #deb887;
+    padding: 12px 14px 14px;
+    text-align: center;
+    margin-bottom: 14px;
+}
+#header h1 {
+    margin: 0 0 12px;
+    font-size: 22px;
+    color: #976731;
+}
+#header blockquote {
+    margin: 0;
+    padding: 6px 10px;
+    background: #ffd700;
+    border: 1px solid #827f68;
+    font-size: 13px;
+    text-align: center;
+}
+#soekarno { display: block; }
+
+/* ===== Menu ===== */
+nav ul {
+    list-style: none;
+    margin: 0 0 12px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    font-size: 13px;
+}
+nav a { color: #0000ee; }
+
+/* ===== Dua gambar utama ===== */
+.gambar {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 18px;
+}
+.gambar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.gambar img:last-child { border-radius: 8px; }
+
+/* ===== Paragraf pembuka ===== */
+.isi p { margin: 0 0 12px; text-align: justify; }
+.isi p:first-child::first-letter {
+    font-size: 1.9em;
+    color: #1a0dcc;
+}
+.jawa { font-weight: normal; }
+
+/* ===== Profil & budidaya ===== */
+h3 { font-size: 14px; margin: 16px 0 8px; }
+#profil ul { margin: 0; padding-left: 22px; }
+#profil li { margin-bottom: 4px; }
+
+#beternak h3 { margin-top: 18px; }
+#beternak ol { margin: 0; padding-left: 22px; }
+#beternak li { margin-bottom: 10px; }
+#beternak h4 { margin: 0 0 8px; font-size: 13px; }
+#beternak p { margin: 0 0 8px; text-align: justify; }
+
+/* ===== Koleksi foto ===== */
+.koleksi {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+    margin: 26px 0 28px;
+}
+.koleksi img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border: 6px solid #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* ===== Promo ===== */
+.promo { text-align: center; }
+.promo h2 { margin: 0 0 12px; font-size: 16px; }
+.promo h3 { margin: 0 0 14px; font-size: 13px; }
+.promo del { color: #d00000; }
+.promo strong { color: #d00000; }
+#Wa { color: #d00000; font-weight: bold; }
+.promo h4 { margin: 0 0 8px; font-size: 12px; }
+.promo ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+.promo ol a {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.promo ol a:hover { background: #000; }
+
+/* ===== Layar kecil ===== */
+@media (max-width: 520px) {
+    .gambar img { width: 48%; height: auto; aspect-ratio: 1; }
+    .koleksi img { width: 44%; height: auto; aspect-ratio: 1; }
+}

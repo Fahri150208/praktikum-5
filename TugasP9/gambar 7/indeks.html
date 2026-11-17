@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar 7 - Representative Flex Layout Example</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+            gap: 6px; /* Jarak antar baris */
+            width: 100%;
+            max-width: 500px; /* Lebar maksimal area layout */
+        }
+
+        .flex-row {
+            display: flex;
+            gap: 6px; /* Jarak antar kotak dalam satu baris */
+            width: 100%;
+        }
+
+        .box {
+            flex: 1; /* Membuat kotak membagi ruang tersisa secara adil */
+            height: 35px;
+            background-color: #e0e0e0; /* Warna abu-abu terang */
+            border: 2px solid #1a1a1a; /* Garis tepi tebal */
+            border-radius: 4px; /* Sudut sedikit melengkung */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flex-container">
+        <!-- Baris Pertama: 3 Kotak -->
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        
+        <!-- Baris Kedua: 5 Kotak -->
+        <div class="flex-row">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+
+</body>
+</html>

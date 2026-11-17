@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar 8b - Layout Flexbox 2</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; color: white; }
+        .outer-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: #ff9999; /* Latar Pink */
+            padding: 20px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .header, .footer {
+            background-color: #76c7c0; /* Hijau Tosca Terang */
+            padding: 15px;
+        }
+        .middle-row {
+            display: flex;
+            gap: 15px;
+            min-height: 250px;
+        }
+        .aside {
+            width: 30%;
+            background-color: #52a8a2; /* Hijau Tosca Gelap */
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .article-container {
+            flex-grow: 1;
+            background-color: #f26d6d; /* Merah/Coral */
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .image-row {
+            display: flex;
+            gap: 10px;
+            margin-top: auto;
+            justify-content: space-between;
+        }
+        .image-box {
+            background-color: #d9d9d9; /* Abu-abu */
+            color: #fff;
+            padding: 30px 10px;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-container">
+        <div class="header">Header</div>
+        <div class="middle-row">
+            <div class="aside">Aside</div>
+            <div class="article-container">
+                <div>Article</div>
+                <div class="image-row">
+                    <div class="image-box">Image</div>
+                    <div class="image-box">Image</div>
+                    <div class="image-box">Image</div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

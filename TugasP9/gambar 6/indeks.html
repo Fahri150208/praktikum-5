@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar 6 - Layout Flexbox</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        .container {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid #ccc;
+            text-align: left;
+            font-weight: bold;
+        }
+        .header, .footer {
+            background-color: #f0e68c; /* Khaki/Kuning Pucat */
+            padding: 20px;
+        }
+        .middle-row {
+            display: flex;
+            min-height: 200px;
+        }
+        .article {
+            flex-grow: 1;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .aside {
+            width: 20%;
+            background-color: #ffb6c1; /* Pink */
+            padding: 20px;
+        }
+        .nav {
+            width: 20%;
+            background-color: #00ced1; /* Tosca/Cyan */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="middle-row">
+            <div class="article">Article</div>
+            <div class="aside">Aside</div>
+            <div class="nav">Nav</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
