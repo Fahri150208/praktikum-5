@@ -9,16 +9,13 @@
     <p>Lihat hasil melalui Console (F12).</p>
     
     <script>
-        // 1. Deklarasi variabel nama dan nilai mahasiswa
         const nama = "Akbar"; 
         const tugas = 80;
         const uts = 70;
         const uas = 90;
 
-        // 2. Menghitung nilai akhir
         const nilaiAkhir = (tugas * 0.30) + (uts * 0.30) + (uas * 0.40);
 
-        // 3. Percabangan untuk menentukan status kelulusan
         let statusKelulusan;
         if (nilaiAkhir >= 60) {
             statusKelulusan = "LULUS";
@@ -26,7 +23,6 @@
             statusKelulusan = "TIDAK LULUS";
         }
 
-        // 4. Menampilkan output wajib melalui console
         console.log("Nama Mahasiswa:", nama);
         console.log("Nilai Akhir:", nilaiAkhir);
         console.log("Status Kelulusan:", statusKelulusan);
