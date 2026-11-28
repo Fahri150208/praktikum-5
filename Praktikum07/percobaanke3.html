@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="judul">Selamat datang</h2>
+    <button id="btnUbah">ubah tampilan</button>
+
+    <script>
+            function ubahTampilan() {
+                const judul = document.getElementById("judul");
+                judul.textContent = "Love Alisa kujou";
+                judul.style.color = "pink";
+            }
+
+            document.getElementById("btnUbah")
+                .addEventListener("click", ubahTampilan)
+    </script>
+</body>
+</html>

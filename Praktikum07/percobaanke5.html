@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Daftar nama mahasiswa</h2>
+    <input id="nama" placeholder="Nama mahasiswa">
+    <button id="tambah">Tambah</button>
+    <ul id="daftar"></ul>
+
+    <script>
+        const input = document.getElementById("nama");
+        const daftar = document.getElementById("daftar");
+
+        function tambahMahasiswa() {
+            const name = input.value.trim();
+            if (nama ==="") { 
+                alert("nama wajib diisi");
+                return
+            }
+            const item = document.createElement("li")
+            item.appendChild(document.createTexNode(nama + " "));
+            const tombolHapus = document.createElement("button");
+
+            tombolHapus.textContent = "hapus";
+            tombolHapus.addEventListener("click", () => item.remove());
+
+            item.appendChild(tombolHapus);
+            daftar.appendChild(item);
+
+            input.value = "";
+            input.focus();
+        }
+
+        document.getElementById("tambah")
+        .addEventListener("click", tambahMahasiswa)
+    </script>
+</body>
+</html>
